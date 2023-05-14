@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+@import url(https://fonts.googleapis.com/css?family=Teko);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+/*
+html {
+    height: 100%;
+}
+*/
+
+::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+body {
+    background: rgb(53, 108, 162);
+    background: linear-gradient(90deg, rgb(58, 96, 134) 0%, rgba(53,108,162,1) 100%, rgba(37,73,96,1) 100%);
+
+    margin: 0; 
+    display: flex; 
+    flex-direction: column;
+    /*height: 100%;*/
+}
+
+
+.nav-menu {
+    position: relative; 
+    width: 100%;
+    height: 10em;
+    /*height: 14%;*/
+    top: 0;
+}
+
+.nav-menu ul{
+    background: #1d1d27; 
+    position: relative; 
+    border-radius: 2%;
+    transform: translate(-50%, -50%);
+    max-width: 50em;
+    max-height: 5em;
+    width: 50%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    padding: 0; 
+    margin: 0; 
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+}
+
+.nav-menu ul a{
+    height: 100%;
+    transition: all .5s ease-in-out;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.nav-menu ul li{
+    position: relative; 
+    display: inline-block; 
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+#home:hover{
+    background: rgb(6, 113, 102);
+}
+
+#inbox:hover{
+    background: rgb(6, 113, 102);
+}
+
+#portfolio:hover{
+    background: rgb(6, 113, 102);
+}
+
+#grid:hover{
+    background: rgb(6, 113, 102);
+}
+
+.nav-menu ul li i {
+    color: rgb(220, 211, 211); 
+    font-size: 1.5em; 
+}
+
+.home{
+    width: 100%;
+    /*height: 80%;*/
+    height: 45em;
+    display: block;
+    position: relative; 
+}
+
+.home h1{
+    color: rgb(220, 211, 211);
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+    position: relative; 
+    font-size: 2em;
+}
+
+.home p{
+    color: rgb(198, 188, 188);
+    text-align: center;
+    font-family: "Georgia";
+    font-style: italic;
+}
+
+.left-arrow, 
+.right-arrow{
+    position: absolute; 
+    transform: translate(0, -50%);
+    top: 50%;
+    height: 30em;
+    left: 0;
+    width: 3%;
+    transition: all .1s linear;
+}
+
+.left-arrow i, 
+.right-arrow i {
+    position: relative;
+    color: white; 
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: .2em;
+}
+
+.right-arrow{
+    left: 97%;
+}
+
+footer{
+    width: 100%;
+    height: 5em;
+    margin-top: auto;
+    text-align: center;
+}
+
+footer p{
+    color: whitesmoke;
+    font-family: "Helvetica";
+    font-size: 1em; 
+    opacity: .7;
+    position: relative;
+    top: 20%;
+}
+
+footer p:hover{
+    text-decoration: underline;
+}
